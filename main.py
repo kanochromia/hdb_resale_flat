@@ -43,7 +43,7 @@ elif menu == 'Predict Price':
     flat_type_dic = {'type s1':0, 'improved':1, 'new generation':2, 'standard':3, 'model a':4, 'simplified':5,
                  'premium apartment':6, 'maisonette':7, 'model a-maisonette':8, 'apartment':9,
                  'adjoined flat':10, 'multi generation':11, 'model a2':12, 'terrace':13,
-                 'improved-maisonette':14, 'premium maisonette':15, 'dbss':16, , '2-room':17,
+                 'improved-maisonette':14, 'premium maisonette':15, 'dbss':16, '2-room':17,
                  'type s2':18, 'premium apartment loft':19}
     flat_model_dic = {'2 room':0, '3 room':1, '4 room':2, '5 room':3, 'executive':4, 'multi-generation':5, '1 room':6}
     
@@ -52,7 +52,7 @@ elif menu == 'Predict Price':
     flat_type_list = ['type s1', 'improved', 'new generation', 'standard', 'model a', 'simplified',
                  'premium apartment', 'maisonette', 'model a-maisonette', 'apartment',
                  'adjoined flat', 'multi generation', 'model a2', 'terrace',
-                 'improved-maisonette', 'premium maisonette', 'dbss', , '2-room',
+                 'improved-maisonette', 'premium maisonette', 'dbss', '2-room',
                  'type s2', 'premium apartment loft']
     flat_model_list = ['2 room', '3 room', '4 room', '5 room', 'executive', 'multi-generation', '1 room']
     
