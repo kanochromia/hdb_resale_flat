@@ -1,0 +1,200 @@
+# Metadata for Listing of Centres
+---
+Identifier: 'b0c265a0-37c0-421c-829b-fee6929175c4'
+Name: 'listing-of-centres'
+Title: 'Listing of Centres'
+Description: 'This data set contains a listing of all active pre-school centres.'
+Topics:
+  - 'Education'
+Keywords:
+  - 'Family'
+  - 'Pre-school'
+Publisher:
+  Name: 'Early Childhood Development Agency'
+  Admin 1:
+    Name: 'Nur Aisyah Rapii'
+    Department: 'ECDA'
+    Email: 'nur_aisyah_rapii@ecda.gov.sg'
+  Admin 2:
+    Name: 'Poh Sok Ee'
+    Department: 'ECDA'
+    Email: 'poh_sok_ee@ecda.gov.sg'
+Sources:
+  - 'Early Childhood Development Agency'
+Source Url: 'https://cms.ecda.gov.sg/prweb/PRServlet/?pyActivity=@baseclass.DownloadMOLDocument&FileType=centre&pzAuth=guest'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '2018-11-20 to 2021-12-09'
+Last Updated: '2022-01-25T00:42:09.908417'
+Resources:
+  -
+    Identifier: 'ca9cae4b-40b9-4e89-a032-f7d17ff741c6'
+    Title: 'Listing of Centres'
+    Url: 'https://storage.data.gov.sg/listing-of-centres/resources/listing-of-centres-2022-01-25T00-42-09Z.csv'
+    Format: 'CSV'
+    Coverage: '2018-11-20 to 2021-12-09'
+    Description: 'Pre-school centres'
+    Last Updated: '2022-01-25T00:42:09.353156'
+    Schema:
+      -
+        Name: 'tp_code'
+        Title: 'Tp code'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'centre_code'
+        Title: 'Centre code'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'centre_name'
+        Title: 'Centre name'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'organisation_code'
+        Title: 'Organisation code'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'organisation_description'
+        Title: 'Organisation description'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'service_model'
+        Title: 'Service model'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'centre_contact_no'
+        Title: 'Centre contact no'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'centre_email_address'
+        Title: 'Centre email address'
+        Type: 'text'
+        Sub Type: 'email'
+      -
+        Name: 'centre_address'
+        Title: 'Centre address'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'postal_code'
+        Title: 'Postal code'
+        Type: 'text'
+        Sub Type: 'postal_code'
+      -
+        Name: 'centre_website'
+        Title: 'Centre website'
+        Type: 'text'
+        Sub Type: 'url'
+        Description:
+          - '"na" : Data not available or not applicable'
+          - '"-" : Data is negligible or not significant'
+      -
+        Name: 'infant_vacancy'
+        Title: 'Infant vacancy'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'pg_vacancy'
+        Title: 'Pg vacancy'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'n1_vacancy'
+        Title: 'N1 vacancy'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'n2_vacancy'
+        Title: 'N2 vacancy'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'k1_vacancy'
+        Title: 'K1 vacancy'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'k2_vacancy'
+        Title: 'K2 vacancy'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'food_offered'
+        Title: 'Food offered'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'second_languages_offered'
+        Title: 'Second languages offered'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'spark_certified'
+        Title: 'Spark certified'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'weekday_full_day'
+        Title: 'Weekday full day'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'saturday'
+        Title: 'Saturday'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'scheme_type'
+        Title: 'Scheme type'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'extended_operating_hours'
+        Title: 'Extended operating hours'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'provision_of_transport'
+        Title: 'Provision of transport'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'government_subsidy'
+        Title: 'Government subsidy'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'gst_regisration'
+        Title: 'Gst regisration'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'last_updated'
+        Title: 'Last updated'
+        Type: 'datetime'
+        Sub Type: 'date'
+        Format: 'YYYY-MM-DD'
+      -
+        Name: 'remarks'
+        Title: 'Remarks'
+        Type: 'text'
+        Sub Type: 'general'

@@ -1,0 +1,69 @@
+# Metadata for Carpark Rates (Major Shopping Malls, Attractions and Hotels)
+---
+Identifier: 'fc5f2b4c-a72d-46db-81b0-c41ba078611d'
+Name: 'carpark-rates'
+Title: 'Carpark Rates (Major Shopping Malls, Attractions and Hotels)'
+Description:
+  - 'Lists parking rates & opening hours for carparks in major shopping malls, attractions,
+    and hotels.'
+  - ''
+Topics:
+  - 'Transport'
+Keywords:
+  - 'ERP'
+  - 'Parking'
+Publisher:
+  Name: 'Land Transport Authority'
+  Admin 1:
+    Name: 'Land Transport Authority'
+    Department: 'Land Transport Authority'
+    Email: 'Datamall@LTA.gov.sg'
+Sources:
+  - 'Land Transport Authority'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Ad-hoc'
+Coverage: '2018-11-01 to 2018-11-09'
+Last Updated: '2018-11-14T03:26:00.360630'
+Resources:
+  -
+    Identifier: '85207289-6ae7-4a56-9066-e6090a3684a5'
+    Title: 'Carpark Rates'
+    Url: 'https://storage.data.gov.sg/carpark-rates/resources/carpark-rates-2018-11-14T02-20-49Z.csv'
+    Format: 'CSV'
+    Coverage: '2018-11-01 to 2018-11-09'
+    Description: 'Updated: Nov 2018'
+    Last Updated: '2018-11-14T02:20:49.865627'
+    Schema:
+      -
+        Name: 'carpark'
+        Title: 'Carpark'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'category'
+        Title: 'Category'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'weekdays_rate_1'
+        Title: 'Weekdays Rate 1'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'weekdays_rate_2'
+        Title: 'Weekdays Rate 2'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"-" : Data is negligible or not significant'
+      -
+        Name: 'saturday_rate'
+        Title: 'Saturday Rate'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"-" : Data is negligible or not significant'
+      -
+        Name: 'sunday_publicholiday_rate'
+        Title: 'Sunday and Public Holiday Rate'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"-" : Data is negligible or not significant'

@@ -1,0 +1,55 @@
+# Metadata for Listing of Licensed Supermarkets
+---
+Identifier: '2aca68c7-6bef-45dc-a31f-79a75f2be880'
+Name: 'listing-of-licensed-supermarkets'
+Title: 'Listing of Licensed Supermarkets'
+Description: 'Listing of Licensed Supermarkets'
+Topics:
+  - 'Infrastructure'
+Keywords:
+  - 'SFA'
+  - 'Singapore Food Agency'
+  - 'food'
+  - 'supermarkets'
+Publisher:
+  Name: 'Singapore Food Agency'
+  Admin 1:
+    Name: 'Lennard'
+    Department: 'OGP'
+    Email: 'admin@data.gov.sg'
+Sources:
+  - 'Singapore Food Agency'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '2020-06-01 to 2021-05-31'
+Last Updated: '2021-10-28T08:49:28.517166'
+Resources:
+  -
+    Identifier: 'df586152-d00f-4b15-b667-9e268f1b60df'
+    Title: 'Listing of Supermarkets'
+    Url: 'https://storage.data.gov.sg/listing-of-licensed-supermarkets/resources/listing-of-supermarkets-2021-10-28T08-49-28Z.csv'
+    Format: 'CSV'
+    Coverage: '2020-06-01 to 2021-05-31'
+    Last Updated: '2021-10-28T08:49:28.096529'
+    Schema:
+      -
+        Name: 'licence_numbers'
+        Title: 'Licence numbers'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'business_name'
+        Title: 'Business name'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"-" : Data is negligible or not significant'
+      -
+        Name: 'name_of_license'
+        Title: 'Name of license'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'premise_address'
+        Title: 'Premise address'
+        Type: 'text'
+        Sub Type: 'general'

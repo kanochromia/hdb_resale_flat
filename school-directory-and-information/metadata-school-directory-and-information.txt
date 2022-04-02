@@ -1,0 +1,333 @@
+# Metadata for School Directory and Information
+---
+Identifier: 'c004b703-5e64-47db-a504-e60e74fd3b32'
+Name: 'school-directory-and-information'
+Title: 'School Directory and Information'
+Description:
+  - 'List of all schools with details on:'
+  - '1.  General information of schools'
+  - '2.  Subjects offered'
+  - '3.  Co-curricular activities (CCAs)'
+  - '4.  MOE programmes'
+  - '5.  School Distinctive Programmes'
+  - ''
+  - 'All information is accurate as at 24 Mar 2021.'
+Topics:
+  - 'Education'
+Keywords:
+  - 'CCA'
+  - 'Co-curricular Activities'
+  - 'MOE Programmes'
+  - 'School'
+  - 'School Distinctive Programmes'
+  - 'School Information'
+  - 'Subject'
+Publisher:
+  Name: 'Ministry of Education'
+  Admin 1:
+    Name: 'Mabel Lee'
+    Department: 'School Cockpit Administration Centre, School Division'
+    Email: 'mabel_lee@moe.gov.sg'
+Sources:
+  - 'Ministry of Education'
+Source Url: 'https://sis.moe.gov.sg/'
+License: 'https://data.gov.sg/open-data-licence'
+Frequency: 'Annual'
+Coverage: '2021-03-24 to 2022-03-31'
+Last Updated: '2021-03-26T03:17:26.577196'
+Resources:
+  -
+    Identifier: 'ede26d32-01af-4228-b1ed-f05c45a1d8ee'
+    Title: 'General information of schools'
+    Url: 'https://storage.data.gov.sg/school-directory-and-information/resources/general-information-of-schools-2021-03-25T06-41-50Z.csv'
+    Format: 'CSV'
+    Coverage: '2021-03-24 to 2022-03-30'
+    Last Updated: '2021-03-25T06:41:50.698847'
+    Schema:
+      -
+        Name: 'school_name'
+        Title: 'School name'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'url_address'
+        Title: 'URL address'
+        Type: 'text'
+        Sub Type: 'url'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'address'
+        Title: 'Address'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'postal_code'
+        Title: 'Postal code'
+        Type: 'text'
+        Sub Type: 'postal_code'
+      -
+        Name: 'telephone_no'
+        Title: 'Telephone no'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'telephone_no_2'
+        Title: 'Telephone no 2'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'fax_no'
+        Title: 'Fax no'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'fax_no_2'
+        Title: 'Fax no 2'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'email_address'
+        Title: 'Email address'
+        Type: 'text'
+        Sub Type: 'email'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'mrt_desc'
+        Title: 'Mrt desc'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'bus_desc'
+        Title: 'Bus desc'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'principal_name'
+        Title: 'Principal name'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'first_vp_name'
+        Title: 'First vp name'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'second_vp_name'
+        Title: 'Second vp name'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'third_vp_name'
+        Title: 'Third vp name'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'fourth_vp_name'
+        Title: 'Fourth vp name'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'fifth_vp_name'
+        Title: 'Fifth vp name'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'sixth_vp_name'
+        Title: 'Sixth vp name'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'dgp_code'
+        Title: 'Dgp code'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'zone_code'
+        Title: 'Zone code'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'type_code'
+        Title: 'Type code'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'nature_code'
+        Title: 'Nature code'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'session_code'
+        Title: 'Session code'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'mainlevel_code'
+        Title: 'Mainlevel code'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'sap_ind'
+        Title: 'Sap ind'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'autonomous_ind'
+        Title: 'Autonomous ind'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'gifted_ind'
+        Title: 'Gifted ind'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'ip_ind'
+        Title: 'Ip ind'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'mothertongue1_code'
+        Title: 'Mothertongue1 code'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'mothertongue2_code'
+        Title: 'Mothertongue2 code'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'mothertongue3_code'
+        Title: 'Mothertongue3 code'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+  -
+    Identifier: '3bb9e6b0-6865-4a55-87ba-cc380bc4df39'
+    Title: 'Subjects Offered'
+    Url: 'https://storage.data.gov.sg/school-directory-and-information/resources/subjects-offered-2021-03-25T06-50-40Z.csv'
+    Format: 'CSV'
+    Coverage: '2021-03-25 to 2022-03-31'
+    Last Updated: '2021-03-25T06:50:40.026488'
+    Schema:
+      -
+        Name: 'school_name'
+        Title: 'School name'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'subject_desc'
+        Title: 'Subject desc'
+        Type: 'text'
+        Sub Type: 'general'
+  -
+    Identifier: 'dd7a056a-49fa-4854-bd9a-c4e1a88f1181'
+    Title: 'Co-curricular activities (CCAs)'
+    Url: 'https://storage.data.gov.sg/school-directory-and-information/resources/co-curricular-activities-ccas-2021-03-25T06-52-47Z.csv'
+    Format: 'CSV'
+    Coverage: '2021-03-25 to 2022-03-31'
+    Last Updated: '2021-03-25T06:52:47.168219'
+    Schema:
+      -
+        Name: 'school_name'
+        Title: 'School name'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'school_section'
+        Title: 'School section'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'cca_grouping_desc'
+        Title: 'Cca grouping desc'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'cca_generic_name'
+        Title: 'Cca generic name'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'cca_customized_name'
+        Title: 'Cca customized name'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+  -
+    Identifier: '9a94c7ed-710b-4ba5-8e01-8588f129efcc'
+    Title: 'MOE programmes'
+    Url: 'https://storage.data.gov.sg/school-directory-and-information/resources/moe-programmes-2021-03-25T06-53-59Z.csv'
+    Format: 'CSV'
+    Coverage: '2021-03-25 to 2022-03-31'
+    Last Updated: '2021-03-25T06:53:59.813948'
+    Schema:
+      -
+        Name: 'school_name'
+        Title: 'School'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'moe_programme_desc'
+        Title: 'MOE Programme'
+        Type: 'text'
+        Sub Type: 'general'
+  -
+    Identifier: '74362320-e29d-458f-aa56-d9971ee310fd'
+    Title: 'School Distinctive Programmes'
+    Url: 'https://storage.data.gov.sg/school-directory-and-information/resources/school-distinctive-programmes-2021-03-25T06-55-28Z.csv'
+    Format: 'CSV'
+    Coverage: '2021-03-25 to 2022-03-31'
+    Last Updated: '2021-03-25T06:55:28.991708'
+    Schema:
+      -
+        Name: 'school_name'
+        Title: 'School'
+        Type: 'text'
+        Sub Type: 'general'
+      -
+        Name: 'alp_domain'
+        Title: 'Applied Learning Programme Domain'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'alp_title'
+        Title: 'Applied Learning Programme Title'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'llp_domain1'
+        Title: 'Learning for Life Programme Domain 1'
+        Type: 'text'
+        Sub Type: 'general'
+        Description:
+          - '"na" : Data not available or not applicable'
+          - '"na" : Data not available or not applicable'
+      -
+        Name: 'llp_title1'
+        Title: 'Learning for Life Programme Title 1'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'llp_domain2'
+        Title: 'Learning for Life Programme Domain 2'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
+      -
+        Name: 'llp_title2'
+        Title: 'Learning for Life Programme Title 2'
+        Type: 'text'
+        Sub Type: 'general'
+        Description: '"na" : Data not available or not applicable'
