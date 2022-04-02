@@ -9,7 +9,7 @@ import random
 from sklearn.preprocessing import StandardScaler
 
 # import data file csv
-df = pd.read_csv('df_dum.csv')
+df = pd.read_pickle('df_dum.pkl')
 # set page title
 st.set_page_config('HDB Resale Flat Prices')
 
@@ -67,8 +67,8 @@ elif menu == 'Predict Price':
     flat_model_choice = st.selectbox(label='Select your preferred flat model', options=flat_model_list)
     flat_models = flat_model_dic[flat_model_choice]
     
-    X = df_dum.drop(columns=['resale_price'])
-    y = df_dum['resale_price']
+    X = df.drop(columns=['resale_price'])
+    y = df['resale_price']
     
     # Train, Test, Split
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
