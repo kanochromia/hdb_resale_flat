@@ -67,7 +67,7 @@ elif menu == 'Predict Price':
     flat_model_choice = st.selectbox(label='Select your preferred flat model', options=flat_model_list)
     flat_models = flat_model_dic[flat_model_choice]
     
-    X = df.drop(columns=['resale_price'])
+    X = df.drop(columns=['resale_price', 'date', 'year', 'lease_commence_date'])
     y = df['resale_price']
     
     # Train, Test, Split
