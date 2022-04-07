@@ -3,13 +3,13 @@ import pandas as pd
 import streamlit as st
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.model_selection import train_test_split
-from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression
 import random
 from sklearn.preprocessing import StandardScaler
 
 # import data file csv
-df = pd.read_pickle('df_dum.pkl')
+rf = load('rfc.joblib') 
 # set page title
 st.set_page_config('HDB Resale Flat Prices')
 
@@ -66,86 +66,43 @@ elif menu == 'Predict Price':
     
     flat_model_choice = st.selectbox(label='Select your preferred flat model', options=flat_model_list)
     flat_models = flat_model_dic[flat_model_choice]
-    
-    X = df.drop(columns=['resale_price', 'date', 'year', 'lease_commence_date'])
-    y = df['resale_price']
-    
-    # Train, Test, Split
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
-    
-    # Scaled
-    sc = StandardScaler()
-    Z_train = sc.fit_transform(X_train)
-    Z_test = sc.transform(X_test)
-    
-    # instantiate
-    rf = RandomForestRegressor(n_estimators=10)
-    line = LinearRegression()
-    
-    # Fit
-    line.fit(Z_train, y_train)
-    rf.fit(Z_train, y_train)
-    
-    # Score
-    rf_score = rfc.score(Z_test, y_test)
-    line_score = line.score(Z_tet, y_test)
-    column_data = X.columns.values
-    
+
+    column_data = X.columns.values # change the number of columns
+
     # if user selects randomforest
     
-    def predict_price_rf(flattype, flatmodel, remaininglease, floorsqm):
+    def predict_price_rf(flat_type_choice, flat_model_choice, remaining_lease_years, floor_square_area):
         try:
-            flat_type_index = flat_type_list.index(flattype)[0][0]
-            flat_model_index = flat_model_list.index(flatmodel)[0][0]
+            flat_type_index = flat_type_list.index(flat_type_choice)[0][0]
+            flat_model_index = flat_model_list.index(flat_model_choice)[0][0]
         except ValueError:
             flat_type_index = -1
             flat_model_index = -1
 
         x = np.zeros(len(column_data))
-        x[0] = remaininglease
-        x[1] = floorsqm
+        x[0] = remaining_lease_years
+        x[1] = floor_square_area
         if flat_type_index >= 0:
             x[flat_type_index] = 1
         elif flat_model_index >= 0:
             x[flat_model_index] = 5
-
 
         return rf.predict([x])[0]
-    
-    # if user selects linear regression
-    
-    def predict_price_line(flattype, flatmodel, remaininglease, floorsqm):
-        try:
-            flat_type_index = flat_type_list.index(flattype)[0][0]
-            flat_model_index = flat_model_list.index(flatmodel)[0][0]
-        except ValueError:
-            flat_type_index = -1
-            flat_model_index = -1
-
-        x = np.zeros(len(column_data))
-        x[0] = remaininglease
-        x[1] = floorsqm
-        if flat_type_index >= 0:
-            x[flat_type_index] = 1
-        elif flat_model_index >= 0:
-            x[flat_model_index] = 5
-
-
-        return line.predict([x])[0]
+   
     
     # option for linear regression or random forest
     
-    alg = ['Random Forest Regression', 'Linear Regression']
+    alg = ['Random Forest Regression']
     select_alg = st.selectbox('Choose Algorithm for Efficient Predict', alg)
     if st.button('Predict'):
         if select_alg == 'Random Forest Regression':
             st.write('Accuracy Score', rf_score)
-            st.subheader(predict_price_rf(flattype, flatmodel, remaininglease, floorsqm))
+            st.subheader(predict_price_rf(flat_type_choice, flat_model_choice, remaining_lease_years, floor_square_area))
             st.markdown("<h5 style='text-align: left;'> SGD </h5>", unsafe_allow_html=True)
 
         elif select_alg == 'Linear Regression':
             st.write('Accuracy Score', line_score)
-            predicted_price = st.subheader(predict_price_line(flattype, flatmodel, remaininglease, floorsqm))
+            predicted_price = st.subheader(predict_price_line(flat_type_choice, flat_model_choice, remaining_lease_years, floor_square_area))
             st.markdown("<h5 style='text-align: left;'> SGD </h5>", unsafe_allow_html=True)
             if predict_price_linear(models, year, engine_size, transmissions, fuels) <= 0:
                 st.write('Curious about why Linear Regression received Negative value as a Prediction. Here are '
