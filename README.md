@@ -54,11 +54,11 @@ We used Matplotlib and Pandas Profiling to visualise our data.
 
 2. Distribution of Flat Types
 
-![](images/distribution of flat types.png)
+![](images/dist_flat_types.png)
 
 3. Distribution of Flat Models
 
-![](images/number of flat models.png)
+![](images/num_flat_models.png)
 
 4. Floor Square Area
 
@@ -66,27 +66,27 @@ We used Matplotlib and Pandas Profiling to visualise our data.
 
 5. Minimum Distance to Hawker
 
-![](images/min dist hawker.png)
+![](images/min_dist_hawker.png)
 
 6. Minimum Distance to Supermarkets
 
-![](images/min dist supermarket.png)
+![](images/min_dist_supermarket.png)
 
 7. Minimum Distance to Major Attractions
 
-![](images/min dist attractions.png)
+![](images/min_dist_attractions.png)
 
 8. Storey Range
 
-![](images/storey range.png)
+![](images/storey_range.png)
 
 9. Remaining Lease (in years)
 
-![](images/remaining lease years.png)
+![](images/remaining_lease_years.png)
 
 10. Mapping HDBs onto Singapore Map
 
-![](images/hdb in sg.png)
+![](images/hdb_sg.png)
 
 ## Pre-Processing and Modelling
 
