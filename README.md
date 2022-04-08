@@ -50,7 +50,7 @@ We used Matplotlib and Pandas Profiling to visualise our data.
 
 1. Resale Price Index
 
-![](images/resale price index.png)
+![](images/resale_price_index.png)
 
 2. Distribution of Flat Types
 
@@ -103,14 +103,14 @@ We chose 6 models to perform modelling:
 
 ### Evaluation and Conceptual Understanding
 
-|Model|R2 Score (Accuracy)|MAE|MSE
+|Model|R2 Score (Accuracy on Train)|MAE|MSE|
 |---|---|---|---|
-|Linear Regression|0.892560|
-|LassoCV|0.892560|
-|RidgeCV0.892560|
-|ElasticNetCV|0.892560|
-|Decision Tree|0.892560|
-|Random Forest|0.894072|
+|Linear Regression|0.699|$63413|$84977|
+|LassoCV|0.699|$63413|$84977|
+|RidgeCV|0.699|$63413|$84977|
+|ElasticNetCV|0.665|$67465|$89788|
+|Decision Tree|0.999|$23685|$36178|
+|Random Forest|0.993|$18738|$27500|
 
 <li> Thoughts
 
@@ -128,21 +128,12 @@ However, it does poorly on extrapolation. For example, new types of HDB flats ar
 ## Conclusion and Recommendations
 
 <b>Improvements to the Model</b>
+
 We would like to use other Regression models, or even use stacking methods. Below are future model suggestions that we can deploy our data on:
 
-SVM
-Stacking Regressors
-Modified Versions of Random Forest (Regression-Enhanced Random Forests)
-
-<br><b>Business recommendations</b>
-
-<li>Explore other forums that are more local e.g. Hardwarezone because Reddit posts are more global and may not attune well to local context even though CatDog wants to reach out to an international clientele. Starting small within the local context would be a better way to 'taste' the market first.
-<li>r/dogs - more practical and ‘discussion’ driven
-Create consultancy and onboarding services for new dog owners
-<li>If interested to bring in breeds, the top words can signify the popular ones among dog lovers
-<li>r/cats - sharing of digital media
-Grooming services or venture into F&B (e.g. cat café)
-<li>Usage of Words for Impactful Marketing - based on the violin plots, words in marketing tools should target to have unique words for r/dogs < 8 and r/cats < 5. As a base guideline, marketing the business model should fit the behaviour of the posters within the subreddit.
+<li>SVM
+<li>Stacking Regressors
+<li>Modified Versions of Random Forest (Regression-Enhanced Random Forests)
 
 ### References
 
